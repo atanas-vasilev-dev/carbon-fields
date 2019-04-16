@@ -9,6 +9,8 @@ import { doAction } from '@wordpress/hooks';
  */
 import './store';
 import './fields';
+import SearchInput from './components/search-input';
+import Sortable from './components/sortable';
 
 /**
  * Sets the locale data for the package type
@@ -27,6 +29,10 @@ export { default as withValidation } from './hocs/with-validation';
 export { default as withConditionalLogic } from './hocs/with-conditional-logic';
 export { default as uniqueId } from './utils/unique-id';
 export { default as fromSelector } from './utils/from-selector';
+export const components = {
+	'search-input': SearchInput,
+	sortable: Sortable
+};
 
 /**
  * Triggers the initialization of Carbon Fields.

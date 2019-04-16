@@ -28,6 +28,6 @@ composer.lock
 .vagrant
 
 # Bundled assets
-/assets/dist/
-/build
+# /assets/dist/
+# /build
 carbon-fields.zip
