@@ -9,8 +9,6 @@ import { doAction } from '@wordpress/hooks';
  */
 import './store';
 import './fields';
-import SearchInput from './components/search-input';
-import Sortable from './components/sortable';
 
 /**
  * Sets the locale data for the package type
@@ -23,16 +21,14 @@ setLocaleData( window.cf.config.locale, 'carbon-fields-ui' );
 export { createRegistry } from './registry';
 export { getFieldType, registerFieldType } from './registry/fields';
 export { default as Field } from './components/field';
+export { default as SearchInput } from './components/search-input';
+export { default as Sortable } from './components/sortable';
 export { default as withFilters } from './hocs/with-filters';
 export { default as withProps } from './hocs/with-props';
 export { default as withValidation } from './hocs/with-validation';
 export { default as withConditionalLogic } from './hocs/with-conditional-logic';
 export { default as uniqueId } from './utils/unique-id';
 export { default as fromSelector } from './utils/from-selector';
-export const components = {
-	'search-input': SearchInput,
-	sortable: Sortable
-};
 
 /**
  * Triggers the initialization of Carbon Fields.
