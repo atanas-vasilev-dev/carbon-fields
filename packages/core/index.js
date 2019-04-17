@@ -29,6 +29,7 @@ export { default as withValidation } from './hocs/with-validation';
 export { default as withConditionalLogic } from './hocs/with-conditional-logic';
 export { default as uniqueId } from './utils/unique-id';
 export { default as fromSelector } from './utils/from-selector';
+export { default as apiFetch } from './utils/api-fetch';
 
 /**
  * Triggers the initialization of Carbon Fields.
